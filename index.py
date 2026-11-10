@@ -19,11 +19,7 @@ def mostrar_productos(productos):
         nombre, precio, existencias = datos
         print(f'{codigo:<8}{nombre:<15}${precio:<9}{existencias}')
 
-def agregar_pedido(pedido, productos, codigo, cantidad):
-    
-    nombre, precio, existencias = productos[codigo]
-    subtotal = precio * cantidad
-    pedido.append((codigo, nombre, cantidad, subtotal))
+
 
 def registrar_producto(productos, pedido, codigo, cantidad):
     # Validar y registrar un producto er el pedido
